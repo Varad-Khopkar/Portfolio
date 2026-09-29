@@ -56,10 +56,15 @@ export const Hero: React.FC = () => {
               <span className="tracking-wide uppercase font-semibold text-[11px]">{PROFILE_DATA.statusBadge}</span>
             </div>
 
-            {/* Primary Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] font-bold text-slate-900 tracking-tight leading-[1.18]">
-              {PROFILE_DATA.headline}
-            </h1>
+            {/* Name & Primary Headline */}
+            <div className="space-y-3">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.08]">
+                {PROFILE_DATA.name}
+              </h1>
+              <h2 className="text-2xl sm:text-3xl lg:text-[1.85rem] font-semibold text-slate-800 tracking-tight leading-snug">
+                {PROFILE_DATA.headline}
+              </h2>
+            </div>
 
             {/* Supporting Text */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
