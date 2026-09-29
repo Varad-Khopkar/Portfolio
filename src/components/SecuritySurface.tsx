@@ -89,7 +89,7 @@ export const SecuritySurface: React.FC = () => {
   const ActiveIcon = active.icon;
 
   return (
-    <section className="py-16 md:py-20 relative bg-slate-50/40 border-b border-slate-200/80">
+    <section id="security-surfaces" className="py-16 md:py-20 relative bg-slate-50/40 border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

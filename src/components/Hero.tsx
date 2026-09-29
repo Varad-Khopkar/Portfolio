@@ -12,7 +12,8 @@ import {
   Database, 
   Activity,
   CheckCircle2,
-  Check
+  Check,
+  Crosshair
 } from 'lucide-react';
 import { PROFILE_DATA } from '../data/profile';
 import { LinkedinIcon, GithubIcon } from './Icons';
@@ -31,12 +32,13 @@ export const Hero: React.FC = () => {
     { id: 'ENDPOINT', label: 'ENDPOINT', tech: 'CrowdStrike Falcon / Automox', icon: Laptop, color: 'text-blue-600', activeBg: 'bg-blue-50/80 border-blue-500' },
     { id: 'NETWORK', label: 'NETWORK', tech: 'FortiGate NGFW / Rules', icon: Server, color: 'text-indigo-600', activeBg: 'bg-indigo-50/80 border-indigo-500' },
     { id: 'EMAIL', label: 'EMAIL', tech: 'Cisco ESA / SPF / DMARC', icon: MailCheck, color: 'text-sky-600', activeBg: 'bg-sky-50/80 border-sky-500' },
-    { id: 'DLP', label: 'DLP', tech: 'Netskope / Data Loss Prevention', icon: Database, color: 'text-teal-600', activeBg: 'bg-teal-50/80 border-teal-500' },
+    { id: 'DLP', label: 'DLP & CASB', tech: 'Netskope / Data Loss Prevention', icon: Database, color: 'text-teal-600', activeBg: 'bg-teal-50/80 border-teal-500' },
     { id: 'IDENTITY', label: 'IDENTITY', tech: 'Enterprise Access / IAM Controls', icon: Lock, color: 'text-amber-600', activeBg: 'bg-amber-50/80 border-amber-500' },
+    { id: 'DETECTION', label: 'DETECTION', tech: 'IOA / IOC Tuning & Hunting', icon: Crosshair, color: 'text-rose-600', activeBg: 'bg-rose-50/80 border-rose-500' },
   ];
 
   return (
-    <section className="relative pt-28 pb-16 md:pt-36 md:pb-24 bg-white/40 border-b border-slate-200/80 overflow-hidden">
+    <section id="hero" className="relative pt-28 pb-16 md:pt-36 md:pb-24 bg-white/40 border-b border-slate-200/80 overflow-hidden">
 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
